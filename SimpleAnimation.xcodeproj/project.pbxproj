@@ -15,6 +15,10 @@
 		3CFAF90C20999E4B009D8BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAF90B20999E4B009D8BBF /* main.m */; };
 		3CFAF91620999E4B009D8BBF /* SimpleAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAF91520999E4B009D8BBF /* SimpleAnimationTests.m */; };
 		3CFAF92120999E4B009D8BBF /* SimpleAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAF92020999E4B009D8BBF /* SimpleAnimationUITests.m */; };
+		3CFAF9542099F081009D8BBF /* AssessStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAF94B2099F081009D8BBF /* AssessStepViewController.m */; };
+		3CFAF9552099F081009D8BBF /* AssessStepTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAF94E2099F081009D8BBF /* AssessStepTableViewCell.m */; };
+		3CFAF9562099F081009D8BBF /* AssessStepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFAF9502099F081009D8BBF /* AssessStepTableViewCell.xib */; };
+		3CFAF9572099F081009D8BBF /* AssessStepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAF9532099F081009D8BBF /* AssessStepModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		3CFAF91C20999E4B009D8BBF /* SimpleAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFAF92020999E4B009D8BBF /* SimpleAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAnimationUITests.m; sourceTree = "<group>"; };
 		3CFAF92220999E4B009D8BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CFAF94B2099F081009D8BBF /* AssessStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssessStepViewController.m; sourceTree = "<group>"; };
+		3CFAF94C2099F081009D8BBF /* AssessStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessStepViewController.h; sourceTree = "<group>"; };
+		3CFAF94E2099F081009D8BBF /* AssessStepTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssessStepTableViewCell.m; sourceTree = "<group>"; };
+		3CFAF94F2099F081009D8BBF /* AssessStepTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessStepTableViewCell.h; sourceTree = "<group>"; };
+		3CFAF9502099F081009D8BBF /* AssessStepTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssessStepTableViewCell.xib; sourceTree = "<group>"; };
+		3CFAF9522099F081009D8BBF /* AssessStepModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessStepModel.h; sourceTree = "<group>"; };
+		3CFAF9532099F081009D8BBF /* AssessStepModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssessStepModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,9 @@
 				3CFAF8FD20999E4A009D8BBF /* AppDelegate.m */,
 				3CFAF8FF20999E4A009D8BBF /* ViewController.h */,
 				3CFAF90020999E4A009D8BBF /* ViewController.m */,
+				3CFAF94D2099F081009D8BBF /* AssessStep */,
+				3CFAF9512099F081009D8BBF /* AssessStepModel */,
+				3CFAF94A2099F081009D8BBF /* AssessStepVC */,
 				3CFAF90220999E4A009D8BBF /* Main.storyboard */,
 				3CFAF90520999E4A009D8BBF /* Assets.xcassets */,
 				3CFAF90720999E4B009D8BBF /* LaunchScreen.storyboard */,
@@ -130,6 +144,34 @@
 				3CFAF92220999E4B009D8BBF /* Info.plist */,
 			);
 			path = SimpleAnimationUITests;
+			sourceTree = "<group>";
+		};
+		3CFAF94A2099F081009D8BBF /* AssessStepVC */ = {
+			isa = PBXGroup;
+			children = (
+				3CFAF94B2099F081009D8BBF /* AssessStepViewController.m */,
+				3CFAF94C2099F081009D8BBF /* AssessStepViewController.h */,
+			);
+			path = AssessStepVC;
+			sourceTree = "<group>";
+		};
+		3CFAF94D2099F081009D8BBF /* AssessStep */ = {
+			isa = PBXGroup;
+			children = (
+				3CFAF94E2099F081009D8BBF /* AssessStepTableViewCell.m */,
+				3CFAF94F2099F081009D8BBF /* AssessStepTableViewCell.h */,
+				3CFAF9502099F081009D8BBF /* AssessStepTableViewCell.xib */,
+			);
+			path = AssessStep;
+			sourceTree = "<group>";
+		};
+		3CFAF9512099F081009D8BBF /* AssessStepModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CFAF9522099F081009D8BBF /* AssessStepModel.h */,
+				3CFAF9532099F081009D8BBF /* AssessStepModel.m */,
+			);
+			path = AssessStepModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFAF90920999E4B009D8BBF /* LaunchScreen.storyboard in Resources */,
+				3CFAF9562099F081009D8BBF /* AssessStepTableViewCell.xib in Resources */,
 				3CFAF90620999E4A009D8BBF /* Assets.xcassets in Resources */,
 				3CFAF90420999E4A009D8BBF /* Main.storyboard in Resources */,
 			);
@@ -266,7 +309,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFAF90120999E4A009D8BBF /* ViewController.m in Sources */,
+				3CFAF9572099F081009D8BBF /* AssessStepModel.m in Sources */,
 				3CFAF90C20999E4B009D8BBF /* main.m in Sources */,
+				3CFAF9552099F081009D8BBF /* AssessStepTableViewCell.m in Sources */,
+				3CFAF9542099F081009D8BBF /* AssessStepViewController.m in Sources */,
 				3CFAF8FE20999E4A009D8BBF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
